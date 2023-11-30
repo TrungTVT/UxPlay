@@ -358,7 +358,7 @@ raop_handler_setup(raop_conn_t *conn,
         char *model = NULL;
         char *name = NULL;
         bool admit_client = true;
-        plist_t req_deviceid_node = plist_dict_get_item(req_root_node, "deviceID");
+        plist_t req_deviceid_node = plist_dict_get_item(req_root_node, "macAddress");
         plist_get_string_val(req_deviceid_node, &deviceID);  
         plist_t req_model_node = plist_dict_get_item(req_root_node, "model");
         plist_get_string_val(req_model_node, &model);  
